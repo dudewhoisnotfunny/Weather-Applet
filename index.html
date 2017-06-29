@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lab 2</title>
+<link rel="stylesheet" type="text/css" href="lab2style.css" />
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="code.js"></script>
+</head>
+<body onload="javascript:getWeather();">
+
+<header>
+<h1>WEATHER<h1>
+</header>
+
+<nav>
+	<form name="citySearch" action="javascript:getWeather();" method="post">
+	Search for City: <input type="text" id="cityname" name="location" value="london">
+	<input class="btn" type="submit" value="Search">
+	<input type="radio" name="unit" id="r1" onclick="javascript:getWeather();" value="C" checked>C 
+	<input type="radio" name="unit" id="r2" onclick="javascript:getWeather();" value="F">F
+	
+	</form>
+</nav>
+
+<main>
+<section name="curr">
+	<h3>Current</h3>
+	<div id="iconcurr"></div>
+	<h3><span id="currCondition">---</span></h3>
+	<p>Temp: <span id="currTemp"></span></p> 
+	<p>Wind: <span id="currWind"></span></p> 
+	<p>Humidity: <span id="currHumidity"></span>%</p> 	
+</section>
+
+<section name="hourly">
+	<h3>Next 24Hrs</h3>
+	<p class="next24hrs"><span id="h0">---</span> <br> 
+	<span id="h1">---</span> <br> 
+	<span id="h2">---</span> <br> 
+	<span id="h3">---</span> <br> 
+	<span id="h4">---</span> <br> 
+	<span id="h5">---</span> <br> 
+	<span id="h6">---</span> <br> 
+	<span id="h7">---</span> </p> 
+</section>
+
+<section name="day0">
+	<h3 id="t0">1</h3>
+	<div id="icond0"></div>
+	<h3><span id="day0Condition">---</span></h3>
+	<p>Temp: <span id="day0Temp"></span></p> 
+	<p>Wind: <span id="day0Wind"></span></p> 
+	<p>Humidity: <span id="day0Humidity"></span>%</p> 	
+</section>
+
+<section name="day1">
+	<h3 id="t1">2</h3>
+	<div id="icond1"></div>
+	<h3><span id="day1Condition">---</span></h3>
+	<p>Temp: <span id="day1Temp"></span></p> 
+	<p>Wind: <span id="day1Wind"></span></p> 
+	<p>Humidity: <span id="day1Humidity"></span>%</p> 	
+</section>
+
+<section name="day2">
+	<h3 id="t2">3</h3>
+	<div id="icond2"></div>
+	<h3><span id="day2Condition">---</span></h3>
+	<p>Temp: <span id="day2Temp"></span></p> 
+	<p>Wind: <span id="day2Wind"></span></p> 
+	<p>Humidity: <span id="day2Humidity"></span>%</p> 	
+</section>
+
+<section name="day3">
+	<h3 id="t3">4</h3>
+	<div id="icond3"></div>
+	<h3><span id="day3Condition">---</span></h3>
+	<p>Temp: <span id="day3Temp"></span></p> 
+	<p>Wind: <span id="day3Wind"></span></p> 
+	<p>Humidity: <span id="day3Humidity"></span>%</p> 	
+</section>
+
+<section name="day4">
+	<h3 id="t4">5</h3>
+	<div id="icond4"></div>
+	<h3><span id="day4Condition">---</span></h3>
+	<p>Temp: <span id="day4Temp"></span></p> 
+	<p>Wind: <span id="day4Wind"></span></p> 
+	<p>Humidity: <span id="day4Humidity"></span>%</p> 	
+</section>
+
+
+</main>
+
+
+</body>
+</html>
